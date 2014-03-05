@@ -8,8 +8,11 @@ describe 'TubeTrain' do
     tube_train.should respond_to :current_station 
 	end
 
-	it 'should return a station' do
+  it 'should return a station' do
+    expect(tube_train.current_station).to eq(station)
+  end
 
-	  expect(tube_train.current_station).to eq(station)
-	end
+  it 'should return a station name' do
+    expect(tube_train.current_station_name).to eq("Kings Cross")
+  end
 end
