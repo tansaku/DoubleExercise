@@ -3,5 +3,6 @@ class TubeTrain
     @station = station
   end
 	def current_station
+		@station
 	end
 end
