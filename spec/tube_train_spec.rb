@@ -1,3 +1,5 @@
+require 'tube_train'
+
 describe 'TubeTrain' do
 	let(:tube_train){TubeTrain.new}
 	it 'should be in a station' do
