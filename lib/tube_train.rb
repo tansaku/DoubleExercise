@@ -7,6 +7,6 @@ class TubeTrain
 	end
 
 	def current_station_name
-		
+		@station.name
 	end
 end

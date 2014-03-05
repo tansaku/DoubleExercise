@@ -1,7 +1,7 @@
 require 'tube_train'
 
 describe 'TubeTrain' do
-  let(:station) {double :station}
+  let(:station) {double :station, name: 'Kings Cross'}
 	let(:tube_train){TubeTrain.new(station)}
 	
 	it 'should be in a station' do
