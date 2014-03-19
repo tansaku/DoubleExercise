@@ -15,4 +15,8 @@ describe 'TubeTrain' do
   it 'should return a station name' do
     expect(tube_train.current_station_name).to eq("Kings Cross")
   end
+
+  it 'should be able to move to the next station' do
+    expect(tube_train.move('Kings Cross', 'Euston Square'))
+  end
 end
